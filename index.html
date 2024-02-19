@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unggah Data Excel untuk Grafik</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Unggah Data Excel untuk Grafik</h1>
+    </header>
+    <main>
+      <input type="file" id="fileInput" accept=".xlsx, .xls" />
+      <div id="chartContainer" class="chart-container">
+        <!-- Grafik akan ditampilkan di sini -->
+      </div>
+      <button id="resetButton">Reset Grafik</button>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

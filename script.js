@@ -96,3 +96,30 @@ document.addEventListener("DOMContentLoaded", function () {
     return color;
   }
 });
+
+function validateExcel(file) {
+  // Validasi jenis file
+  const allowedExtensions = /(\.xlsx|\.xls)$/i;
+  if (!allowedExtensions.exec(file.name)) {
+    alert("Hanya file Excel yang diperbolehkan: .xlsx atau .xls");
+    return false;
+  }
+
+  // Validasi ukuran file
+  const maxSizeInBytes = 10 * 1024 * 1024; // 10 MB
+  if (file.size > maxSizeInBytes) {
+    alert("Ukuran file terlalu besar. Maksimum 10 MB.");
+    return false;
+  }
+
+  return true;
+}
+
+fileInput.addEventListener("change", function () {
+  const file = fileInput.files[0];
+  if (file) {
+    if (validateExcel(file)) {
+      parseExcel(file);
+    }
+  }
+});

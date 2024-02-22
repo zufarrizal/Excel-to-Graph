@@ -17,7 +17,7 @@ Excel-to-Graph is an application that allows you to upload Excel files and autom
 You can contribute to the development of Excel-to-Graph by creating an account on GitHub and forking this repository.
 
 ## Licence
-License has not been determined. For more information, please contact the repository owner.
+License <a href="https://github.com/zufarrizal/Excel-to-Graph?tab=MIT-1-ov-file">license agreement</a>
 
 ## Demo
 <a href="https://zufarrizal.github.io/Excel-to-Graph/" target="_blank">Try it out</a>
